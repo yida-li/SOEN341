@@ -15,5 +15,4 @@ Real name: Yida Li, GitHub user yida-li
 
 Real name: Saebom Shin, GitHub user successsb89
 
-  
-
+Real name: The Kien Nguyen, Github user kennguyen0303
