@@ -5,7 +5,7 @@ class Signup extends Component {
     super();
     this.state = { usernameInput: "", passwordInput: "" };
   }
-
+  //
   usernameChange = event => {
     this.setState({ usernameInput: event.target.value });
     console.log(this.state.usernameInput);

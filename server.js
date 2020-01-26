@@ -5,7 +5,7 @@ let multer = require("multer"); // added, upload the datum from front-end to bac
 //  FormData of signup
 let upload = multer({ dest: __dirname + "/uploads/" });
 let MongoClient = require("mongodb").MongoClient;
-
+//
 reloadMagic(app);
 
 app.use("/", express.static("build")); // Needed for the HTML and JS files
