@@ -27,9 +27,13 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.4",
     "chokidar": "^3.0.0",
-    "redux": "^4.0.4",
-    "react-redux": "6.0.1",
     "express": "^4.16.4",
+    "mongodb": "^3.5.2",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
+    "react-redux": "6.0.1",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
     "shelljs": "^0.8.3",
     "webpack-inject-plugin": "^1.5.0",
     "ws": "^7.0.0"
