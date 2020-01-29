@@ -21,7 +21,6 @@ class App extends Component {
     return (
       <div>
         <Signup setSignup={this.setSignup} />
-        {/* <Login /> */}
       </div>
     );
   };

@@ -1,5 +1,5 @@
 let express = require("express"); // basic
-let app = express(); // basic
+let app = express(); // basic, can not use immediately, so we have to change to the function
 let reloadMagic = require("./reload-magic.js"); // basic
 let multer = require("multer"); // added, upload the datum from front-end to back-end , combine with
 //  FormData of signup
@@ -17,6 +17,27 @@ let url =
   "mongodb+srv://bob:bobsue@cluster0-vtck9.mongodb.net/test?retryWrites=true&w=majority";
 MongoClient.connect(url, { useUnifiedTopology: true }, (err, db) => {
   dbo = db.db("media-board");
+});
+
+app.post("/login", upload.none(), (req, res) => {
+  console.log("login", req.body);
+  let name = req.body.username;
+  let pwd = req.body.password;
+  dbo.collection("users").findOne({ username: name }, (err, user) => {
+    if (err) {
+      console.log("/login error", err);
+      res.send(JSON.stringify({ success: false }));
+      return;
+    }
+    if (user === null) {
+      res.send(JSON.stringify({ success: false }));
+    }
+    if (user.password === sha1(pwd)) {
+      res.send(JSON.stringify({ success: true }));
+      return;
+    }
+    res.send(JSON.stringify({ success: false }));
+  });
 });
 
 // Your endpoints go after this line
