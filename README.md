@@ -2,7 +2,7 @@ SOEN 341 Social Media Project Winter 2020
 
 Projet name: VibeZ
 
-Programming languages: React, Node.js, TBD
+Programming languages: MERN stack (MongoDB, Express, React and Node.js)
 
 == Core features ==
 
@@ -12,9 +12,9 @@ Programming languages: React, Node.js, TBD
 
 == Extra features ==
 
-	1. Rating system: what is the "vibe" of the content the user sees
-	   default vibes + custom vibes dynamically added by users/followers.
-	   Users may decide to react using custom vibes.
+	1. Rating system: what is the "vibe" of the content the user sees.
+	   Default vibes + custom vibes dynamically added by users/followers.
+	   Users may decide to react using custom vibes made by other users.
 
 	2. News feed similar to Instagram
 
