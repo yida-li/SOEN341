@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Vibez
 social media project
 =======
@@ -6,7 +6,7 @@ SOEN 341 Social Media Project Winter 2020
 
 Projet name: VibeZ
 
-Programming languages: React, Node.js, TBD
+Programming languages: MERN stack (MongoDB, Express, React and Node.js)
 
 == Core features ==
 
@@ -16,9 +16,9 @@ Programming languages: React, Node.js, TBD
 
 == Extra features ==
 
-    1. Rating system: what is the "vibe" of the content the user sees
-       default vibes + custom vibes dynamically added by users/followers.
-       Users may decide to react using custom vibes.
+	  1. Rating system: what is the "vibe" of the content the user sees.
+	   Default vibes + custom vibes dynamically added by users/followers.
+	   Users may decide to react using custom vibes made by other users.
 
     2. News feed similar to Instagram
 
@@ -29,4 +29,4 @@ Programming languages: React, Node.js, TBD
     Real name: Saebom Shin, GitHub user successsb89
     Real name: The Kien Nguyen, Github user kennguyen0303
     Real name: Shijun Deng, Github user Alex-DSJ
->>>>>>> b17665250a8f3d4ddd07159bb7c7418158c8d188
+
