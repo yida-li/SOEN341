@@ -1,17 +1,18 @@
 
-# Vibez
+# VibeZ
 Social media project
 =======
 SOEN 341 Social Media Project Winter 2020
 
-Projet name: VibeZ
+## Projet VibeZ
 
-Programming languages: MERN stack (MongoDB, Express, React and Node.js)
 
 ## Objective 
+	
 	Develop a simplified version of Instagram
 	
 ## Project description
+	
 	Using social media may be a frustrating experience. Expressing your true opinion on content posted
 	by these "influencers" or even your friends may be a daunting task, and let's be honest, you don't
 	want all the attention and hate coming your way from their fans. Introducing Vibez, the social 
@@ -44,3 +45,6 @@ Programming languages: MERN stack (MongoDB, Express, React and Node.js)
 	The Kien Nguyen, (kennguyen0303)
 	Shijun Deng, (Alex-DSJ)
 
+## Technologies
+
+	MERN stack (MongoDB, Express, React and Node.js)
