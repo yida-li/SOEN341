@@ -1,6 +1,6 @@
 
 # Vibez
-social media project
+Social media project
 =======
 SOEN 341 Social Media Project Winter 2020
 
