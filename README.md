@@ -1,11 +1,7 @@
 
-# VibeZ
-Social media project
-=======
-SOEN 341 Social Media Project Winter 2020
+# Project VibeZ
 
-## Projet VibeZ
-
+	SOEN 341 Social Media Project Winter 2020
 
 ## Objective 
 	
