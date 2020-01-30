@@ -9,6 +9,14 @@ Projet name: VibeZ
 Programming languages: MERN stack (MongoDB, Express, React and Node.js)
 
 ## Objective 
+	Develop a simplified version of Instagram
+	
+## Project description
+	Using social media may be a frustrating experience. Expressing your true opinion on content posted
+	by these "influencers" or even your friends may be a daunting task, and let's be honest, you don't
+	want all the attention and hate coming your way from their fans. Introducing Vibez, the social media platform that	  keeps it 100% real (but you can do so anonymously). Is your friend being annoying? Do you want to tell them
+	your real opinion but don't want to hurt their feelings? Give them a vibe check, and maybe others might just
+	be thinking the same. Is what that influencer says #fact? Support them with that vibe check too. 
 
 ## Core features 
 
@@ -19,16 +27,18 @@ Programming languages: MERN stack (MongoDB, Express, React and Node.js)
 ## Extra features 
 
  	1. Rating system: what is the "vibe" of the content the user sees.
-	   Default vibes + custom vibes dynamically added by users/followers.
-	   Users may decide to react using custom vibes made by other users.
+	   This feature allows for negative ratings, i.e. if user finds the content
+	   offensive. There are default vibes and custom vibes (a word) dynamically 
+	   added by users/followers. This feature is similar to existing feature in Slack. 
+	   However, users may decide to react using custom "vibes" made by other users.
 
     2. News feed similar to Instagram
 
 ## Team members 
 
-    Real name: Kevin Zhong Hao Li, GitHub user kevinlizh1992
-    Real name: Yida Li, GitHub user yida-li
-    Real name: Saebom Shin, GitHub user successsb89
-    Real name: The Kien Nguyen, Github user kennguyen0303
-    Real name: Shijun Deng, Github user Alex-DSJ
+	Kevin Zhong Hao Li, (kevinlizh1992)
+	Yida Li, (yida-li)
+	Saebom Shin, (successsb89)
+	The Kien Nguyen, (kennguyen0303)
+	Shijun Deng, (Alex-DSJ)
 
