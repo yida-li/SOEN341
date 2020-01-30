@@ -11,7 +11,7 @@
 	
 	Using social media may be a frustrating experience. Expressing your true opinion on content posted
 	by these "influencers" or even your friends may be a daunting task, and let's be honest, you don't
-	want all the attention and hate coming your way from their fans. Introducing Vibez, the social 
+	want all the attention and hate coming your way from their fans. Introducing VibeZ, the social 
 	media platform that keeps it 100% real (but you can do so anonymously). Is your friend being annoying? 
 	Do you want to tell them your real opinion but don't want to hurt their feelings? Give them a vibe 
 	check, and maybe others might just be thinking the same. Is what that influencer says #fact? 
