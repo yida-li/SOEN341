@@ -20,13 +20,11 @@
 ## Core features
 
     1. Ability to post pictures
-		Users want to share their pictures to either their friends/connections or to the public. Their followers will receive notification once a new post is released. The pictures uploaded need to be stored in the users directory/profile page. A profile page will present all pictures uploaded in a chronological order.
 
-    2. Ability to follow users
-		When a user is interested in another's profile and wishes to receive a notification if there are some updates from that profile, a request to follow can be sent to the owner of the profile from the user. When a user receives a request, that person has three options including accept, decline or ignore. If the person chooses to accept, the name of the senders will be added to the user's follower list. And, they can receive notification, see updates from the user from their news feed. If the user chooses to decline, the request will be removed from the pending request of the user, no change is required for the senders. The ignore option requires no action.
+    2. Ability to follow users	
 
     3. Leave comment on pictures
-		After being posted, pictures can be commented by followers. The comments will be presented vertically in a chronological order. The newest one will be always on top. 
+
 
 ## Extra features
 
