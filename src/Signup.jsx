@@ -36,16 +36,22 @@ class UnconnectedSignup extends Component {
     }
     this.props.dispatch({ type: "signup-success" });
   };
+  handleButton = () => {
+    this.props.dispatch({ type: "signup-success" });
+  };
   render = () => {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h2>Signup</h2>
-        Username
-        <input type="text" onChange={this.handleUsernameChange} />
-        Password
-        <input type="text" onChange={this.handlePasswordChange} />
-        <input type="submit" />
-      </form>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <h2>Signup</h2>
+          Username
+          <input type="text" onChange={this.handleUsernameChange} />
+          Password
+          <input type="text" onChange={this.handlePasswordChange} />
+          <input type="submit" />
+        </form>
+        <button onClick={this.handleButton}>already sign up?</button>
+      </div>
     );
   };
 }
