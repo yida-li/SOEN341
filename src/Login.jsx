@@ -35,6 +35,7 @@ class UnconnectedLogin extends Component {
       alert("login failed");
       return;
     }
+    this.props.setUsername(this.state.username);
     this.props.dispatch({
       type: "login-success"
     });

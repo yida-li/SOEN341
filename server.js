@@ -58,6 +58,34 @@ app.post("/login", upload.none(), (req, res) => {
   });
 });
 
+app.post("/new-post", upload.single("img"), (req, res) => {
+  console.log("request to /new-post. body", req.body);
+  let file = req.file;
+  let frontendPath = "/uploads/" + file.filename;
+  dbo.collection("posts").insertOne({
+    username: req.body.user,
+    description: req.body.description,
+    frontendPath: frontendPath
+  });
+  res.send(JSON.stringify({ success: true }));
+});
+
+app.get("/find-all", (req, res) => {
+  console.log("request to /find-all");
+  dbo
+    .collection("posts")
+    .find({})
+    .toArray((err, ps) => {
+      if (err) {
+        console.log("error", err);
+        res.send("fail");
+        return;
+      }
+      console.log("posts", ps);
+      res.send(JSON.stringify(ps));
+    });
+});
+
 // Your endpoints go before this line
 
 app.all("/*", (req, res, next) => {
