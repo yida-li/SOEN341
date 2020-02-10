@@ -1,12 +1,12 @@
 import { createStore } from "redux";
-let reducer = (state, action) => {
+
+const reducer = (state, action) => {
   if (action.type === "signup-success") {
     return { ...state, signup: true };
   }
-  if (action.type === "login-success") {
+  if (action.type == "login-success") {
     return { ...state, signup: false, loggedIn: true };
   }
-
   return state;
 };
 

@@ -4,56 +4,51 @@ import { connect } from "react-redux";
 class UnconnectedSignup extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      username: "",
-      password: ""
-    };
+    this.state = { username: undefined, password: undefined };
   }
-  handleUsernameChange = event => {
-    console.log("new username", event.target.value);
-    this.setState({ username: event.target.value });
-  };
-  handlePasswordChange = event => {
-    console.log("new password", event.target.value);
-    this.setState({ password: event.target.value });
-  };
-  handleSubmit = async evt => {
-    evt.preventDefault();
-    console.log("signup form submitted");
+
+  handleSubmit = async event => {
+    event.preventDefault();
     let data = new FormData();
     data.append("username", this.state.username);
     data.append("password", this.state.password);
     let response = await fetch("/signup", {
       method: "POST",
-      body: data,
-      credentials: "include"
+      body: data
     });
     let responseBody = await response.text();
-    console.log("responseBody from signup", responseBody);
     let body = JSON.parse(responseBody);
     if (!body.success) {
-      alert("Signup failed");
+      alert("signup failed");
+    } else {
+      alert("success");
+      this.props.dispatch({ type: "signup-success" });
     }
-    this.props.dispatch({ type: "signup-success" });
+    console.log(body);
   };
-  handleButton = () => {
-    this.props.dispatch({ type: "signup-success" });
+  handleUsername = event => {
+    let user = event.target.value;
+    this.setState({ username: user });
   };
-  render = () => {
+
+  handlePassword = event => {
+    this.setState({ password: event.target.value });
+  };
+  render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <h2>Signup</h2>
-          Username
-          <input type="text" onChange={this.handleUsernameChange} />
-          Password
-          <input type="text" onChange={this.handlePasswordChange} />
-          <input type="submit" />
-        </form>
-        <button onClick={this.handleButton}>already sign up?</button>
-      </div>
+      <form onSubmit={this.handleSubmit}>
+        <h2>Sign up!</h2>
+        <div>
+          <input type="text" onChange={this.handleUsername} /> username
+        </div>
+        <div>
+          <input type="text" onChange={this.handlePassword} /> password
+        </div>
+        <input type="submit" />
+      </form>
     );
-  };
+  }
 }
+
 let Signup = connect()(UnconnectedSignup);
 export default Signup;
