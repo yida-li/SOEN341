@@ -10,6 +10,14 @@ class Profile extends Component {
         <Link to="/upload">
           <button>+</button>
         </Link>
+        {this.props.posts.map(e => {
+          return (
+            <div>
+              <img height="150px" width="200px" src={e.frontendPath} />
+              <div>{e.description}</div>
+            </div>
+          );
+        })}
       </div>
     );
   }

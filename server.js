@@ -52,6 +52,21 @@ app.post("/new-post", upload.single("img"), (req, res) => {
   });
   res.send(JSON.stringify({ success: true }));
 });
+app.get("/find-all", (req, res) => {
+  console.log("request to /find-all");
+  dbo
+    .collection("posts")
+    .find({})
+    .toArray((err, ps) => {
+      if (err) {
+        console.log("error", err);
+        res.send("fail");
+        return;
+      }
+      console.log("posts", ps);
+      res.send(JSON.stringify(ps));
+    });
+});
 // Your endpoints go after this line
 
 // Your endpoints go before this line

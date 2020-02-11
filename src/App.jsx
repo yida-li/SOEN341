@@ -9,6 +9,7 @@ class UnconnectedApp extends Component {
     super(props);
     this.state = { username: "" };
   }
+
   setUsername = username => {
     this.setState({ username: username });
   };
@@ -17,7 +18,7 @@ class UnconnectedApp extends Component {
       return <Login username={this.setUsername} />;
     }
     if (this.props.login) {
-      return <Home username={this.state.username} />;
+      return <Home username={this.state.username} posts={this.state.posts} />;
     }
     return <Signup />;
   }
