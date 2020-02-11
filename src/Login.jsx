@@ -49,4 +49,5 @@ class UnconnectedLogin extends Component {
   }
 }
 let Login = connect()(UnconnectedLogin);
+
 export default Login;

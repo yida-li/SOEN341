@@ -15,6 +15,7 @@ class UnconnectedSignup extends Component {
     let response = await fetch("/signup", {
       method: "POST",
       body: data
+
     });
     let responseBody = await response.text();
     let body = JSON.parse(responseBody);
@@ -43,6 +44,7 @@ class UnconnectedSignup extends Component {
         </div>
         <div>
           <input type="text" onChange={this.handlePassword} /> password
+
         </div>
         <input type="submit" />
       </form>

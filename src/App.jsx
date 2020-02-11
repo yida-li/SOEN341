@@ -12,6 +12,7 @@ class UnconnectedApp extends Component {
   setUsername = username => {
     this.setState({ username: username });
   };
+
   render() {
     if (this.props.snup) {
       return <Login username={this.setUsername} />;
@@ -22,6 +23,7 @@ class UnconnectedApp extends Component {
     return <Signup />;
   }
 }
+
 let mapStateToProps = state => {
   return { snup: state.signup, login: state.loggedIn };
 };
