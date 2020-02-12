@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-
+import React, { Component } from 'react';
+import { Link, Route } from 'react-router-dom';
 class Upload extends Component {
   constructor() {
     super();
-    this.state = { file: "", previewImg: "", description: "" };
+    this.state = { file: '', previewImg: '', description: '' };
   }
 
   handleImage = event => {
@@ -14,11 +14,11 @@ class Upload extends Component {
   submitHandler = event => {
     event.preventDefault();
     let data = new FormData();
-    data.append("img", this.state.file);
-    data.append("description", this.state.description);
-    data.append("username", this.props.user);
-    fetch("/new-post", { method: "POST", body: data });
-    alert("upload success");
+    data.append('img', this.state.file);
+    data.append('description', this.state.description);
+    data.append('username', this.props.user);
+    fetch('/new-post', { method: 'POST', body: data });
+    alert('upload success');
   };
   descriptionHandler = event => {
     this.setState({ description: event.target.value });
@@ -27,18 +27,21 @@ class Upload extends Component {
     return (
       <form onSubmit={this.submitHandler}>
         <h1>{this.props.user}</h1>
-        <input type="file" onChange={this.handleImage} />
+        <input type='file' onChange={this.handleImage} />
         <div>
-          <img height="150px" src={this.state.previewImg} />
+          <img height='150px' src={this.state.previewImg} />
         </div>
         <div>
           <input
-            type="text"
-            placeholder="description"
+            type='text'
+            placeholder='description'
             onChange={this.descriptionHandler}
           />
         </div>
-        <input type="submit" />
+        <input type='submit' />
+        <Link to='/profile'>
+          <button>Back to Profile</button>
+        </Link>
       </form>
     );
   }
