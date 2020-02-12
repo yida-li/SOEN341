@@ -1,0 +1,24 @@
+language: node_js
+node_js: -13.7.0
+cache: npm
+
+#before_install:
+install:
+  - npm ci
+
+#before_script:
+script:
+  - npm test
+  - npm run build
+#after_success:
+#after_failure:
+#after_script:
+#before_deploy:
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: gh-pages
+#after_deploy:
+#
