@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import './main.css';
 class UnconnectedLogin extends Component {
   constructor(props) {
     super(props);
@@ -10,19 +10,19 @@ class UnconnectedLogin extends Component {
   handleSubmit = async event => {
     event.preventDefault();
     let data = new FormData();
-    data.append("username", this.state.username);
-    data.append("password", this.state.password);
-    let response = await fetch("/login", {
-      method: "POST",
+    data.append('username', this.state.username);
+    data.append('password', this.state.password);
+    let response = await fetch('/login', {
+      method: 'POST',
       body: data
     });
     let responseBody = await response.text();
     let body = JSON.parse(responseBody);
     if (body.success) {
-      alert("success");
+      alert('success');
       this.props.username(this.state.username);
-      this.props.dispatch({ type: "login-success" });
-    } else alert("fail");
+      this.props.dispatch({ type: 'login-success' });
+    } else alert('fail');
     console.log(body);
   };
   handleUsername = event => {
@@ -36,14 +36,34 @@ class UnconnectedLogin extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <h2>Log in</h2>
-        <div>
-          <input type="text" onChange={this.handleUsername} /> username
+        <h2
+          style={{
+            backgroundColor: 'palegoldenrod',
+            width: '1000px',
+            height: '200px'
+          }}
+        >
+          Log in
+        </h2>
+        <div
+          style={{
+            backgroundColor: 'palevioletred',
+            width: '1000px',
+            height: '200px'
+          }}
+        >
+          <input type='text' onChange={this.handleUsername} /> username
         </div>
-        <div>
-          <input type="text" onChange={this.handlePassword} /> password
+        <div
+          style={{
+            backgroundColor: 'paleturquoise',
+            width: '1000px',
+            height: '200px'
+          }}
+        >
+          <input type='text' onChange={this.handlePassword} /> password
         </div>
-        <input type="submit" />
+        <input className='second' type='submit' />
       </form>
     );
   }
