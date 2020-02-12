@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
+import About from './About';
 class Profile extends Component {
   render() {
     return (
@@ -9,6 +10,7 @@ class Profile extends Component {
           backgroundColor: 'palevioletred'
         }}
       >
+        <Route exact path='/about' Component={About} />
         <div>
           <h1
             style={{
@@ -21,12 +23,30 @@ class Profile extends Component {
               <i class='fas fa-photo-video'></i> Vibe Page
             </div>
           </h1>
+
+          <ul>
+            <li>
+              <a href='https://www.google.com/'>Home</a>
+            </li>
+            <li>
+              <a href='/about'>About</a>
+            </li>
+          </ul>
         </div>
 
         <h1>Welcome {this.props.user}</h1>
 
         <Link to='/upload'>
           <button>Upload Picture</button>
+        </Link>
+        <Link to='/upload'>
+          <button>Followers</button>
+          <Link to='/upload'>
+            <button>Followed</button>
+          </Link>
+          <Link to='/upload'>
+            <button>Manage Photo</button>
+          </Link>
         </Link>
       </div>
     );
