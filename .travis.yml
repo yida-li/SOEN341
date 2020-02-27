@@ -21,9 +21,15 @@ deploy:
   local_dir: build
   on:
 <<<<<<< HEAD
+<<<<<<< HEAD
     branch: temp
 =======
     branch: master
 >>>>>>> dbb2cd2610a464b9b2e94234e7bd37f9dd580376
+=======
+
+    branch: master
+
+>>>>>>> deef9b9e008ca9238045eae819d4ae740cee16a1
 #after_deploy:
 #
