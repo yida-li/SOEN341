@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import './main.css';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+
 class UnconnectedSignup extends Component {
   constructor(props) {
     super(props);
@@ -10,19 +10,19 @@ class UnconnectedSignup extends Component {
   handleSubmit = async event => {
     event.preventDefault();
     let data = new FormData();
-    data.append('username', this.state.username);
-    data.append('password', this.state.password);
-    let response = await fetch('/signup', {
-      method: 'POST',
+    data.append("username", this.state.username);
+    data.append("password", this.state.password);
+    let response = await fetch("/signup", {
+      method: "POST",
       body: data
     });
     let responseBody = await response.text();
     let body = JSON.parse(responseBody);
     if (!body.success) {
-      alert('signup failed');
+      alert("signup failed");
     } else {
-      alert('success');
-      this.props.dispatch({ type: 'signup-success' });
+      alert("success");
+      this.props.dispatch({ type: "signup-success" });
     }
     console.log(body);
   };
@@ -34,57 +34,42 @@ class UnconnectedSignup extends Component {
   handlePassword = event => {
     this.setState({ password: event.target.value });
   };
+
+  handleClick = () => {
+    this.props.dispatch({ type: "signup-success" });
+  };
   render() {
     return (
-      <div
-        className='centers'
-        style={{
-          margin: '200px 400px'
-        }}
-      >
-        <form onSubmit={this.handleSubmit}>
-          <h1
-            style={{
-              backgroundColor: 'palegoldenrod',
-              width: '500px',
-              height: '50px'
-            }}
-          >
-            <div class='righto'>
-              <i class='fas fa-photo-video'></i> VIBE UP!
-            </div>
-          </h1>
-
-          <div
-            style={{
-              backgroundColor: 'palevioletred',
-              width: '500px',
-              height: '100px'
-            }}
-          >
+      <div className="signup-form">
+        <form class="" onSubmit={this.handleSubmit}>
+          <h1></h1>
+          <h1>Vibez</h1>
+          <div>
             <input
-              placeholder='Your name..'
-              type='text'
+              type="text"
+              placeholder="Full Name"
+              className="txtb"
               onChange={this.handleUsername}
             />
           </div>
-
-          <div
-            style={{
-              backgroundColor: 'paleturquoise',
-              width: '500px',
-              height: '100px'
-            }}
-          >
+          <div>
             <input
-              placeholder='Your password..'
-              type='text'
+              type="password"
+              placeholder="Password"
+              className="txtb"
               onChange={this.handlePassword}
             />
           </div>
-
-          <input type='submit' />
-          <img src='https://scontent.fyhu1-1.fna.fbcdn.net/v/t1.15752-9/86375660_236192800728348_3658436057352896512_n.png?_nc_cat=105&_nc_ohc=MB01KDDZOsEAX-l3bxH&_nc_ht=scontent.fyhu1-1.fna&oh=b36534c8821a64416f354a2f40b7e34f&oe=5ED37789' />
+          <div>
+            <input
+              type="submit"
+              value="Create Account"
+              className="signup-btn"
+            />
+          </div>
+          <button className="vibe-btn" onClick={this.handleClick}>
+            Sign in
+          </button>
         </form>
       </div>
     );
