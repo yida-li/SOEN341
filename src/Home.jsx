@@ -16,6 +16,7 @@ class Home extends Component {
     this.setState({ posts: body });
   };
   renderUpload = () => {
+    // adding new stuff
     return <Upload user={this.props.username} />;
   };
   renderProfile = () => {

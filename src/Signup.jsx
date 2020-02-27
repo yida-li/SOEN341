@@ -34,18 +34,44 @@ class UnconnectedSignup extends Component {
   handlePassword = event => {
     this.setState({ password: event.target.value });
   };
+
+  handleClick = () => {
+    this.props.dispatch({ type: "signup-success" });
+  };
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h2>Sign up!</h2>
-        <div>
-          <input type="text" onChange={this.handleUsername} /> username
-        </div>
-        <div>
-          <input type="text" onChange={this.handlePassword} /> password
-        </div>
-        <input type="submit" />
-      </form>
+      <div className="signup-form">
+        <form class="" onSubmit={this.handleSubmit}>
+          <h1>Sign up!</h1>
+          <h1>Vibez users!</h1>
+          <div>
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="txtb"
+              onChange={this.handleUsername}
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Password"
+              className="txtb"
+              onChange={this.handlePassword}
+            />
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Create Account"
+              className="signup-btn"
+            />
+          </div>
+          <div className="signup-btn-b">
+            <button onClick={this.handleClick}>Already Users?</button>
+          </div>
+        </form>
+      </div>
     );
   }
 }

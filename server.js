@@ -13,9 +13,9 @@ app.use("/uploads", express.static("uploads"));
 
 let dbo = undefined;
 let url =
-  "mongodb+srv://bob:bobsue@cluster0-mijro.mongodb.net/test?retryWrites=true&w=majority";
+  "mongodb+srv://bob:bobsue@cluster0-vtck9.mongodb.net/test?retryWrites=true&w=majority";
 MongoClient.connect(url, { useUnifiedTopology: true }, (err, db) => {
-  dbo = db.db("saebom");
+  dbo = db.db("Vibez");
 });
 
 app.post("/signup", upload.none(), (req, res) => {
@@ -52,6 +52,8 @@ app.post("/new-post", upload.single("img"), (req, res) => {
   });
   res.send(JSON.stringify({ success: true }));
 });
+
+//endpoint for calling all picture information from mongoDB.
 app.get("/find-all", (req, res) => {
   console.log("request to /find-all");
   dbo

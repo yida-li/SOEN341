@@ -5,14 +5,14 @@ class Profile extends Component {
   render() {
     return (
       <div>
-        <h1>{this.props.user}</h1>
+        <h1>Welcome, {this.props.user}!</h1>
         Profile page
         <Link to="/upload">
           <button>+</button>
         </Link>
         {this.props.posts.map(e => {
           return (
-            <div>
+            <div className="test">
               <img height="150px" width="200px" src={e.frontendPath} />
               <div>{e.description}</div>
             </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Upload extends Component {
   constructor() {
@@ -39,6 +40,10 @@ class Upload extends Component {
           />
         </div>
         <input type="submit" />
+        <botton>
+          {" "}
+          <Link to="/">Go Profile</Link>
+        </botton>
       </form>
     );
   }
