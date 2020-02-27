@@ -3,16 +3,17 @@ import Signup from "./Signup.jsx";
 import Login from "./Login.jsx";
 import { connect } from "react-redux";
 import Home from "./Home.jsx";
+//import "bootstrap/dist/css/bootstrap.css";
 
 class UnconnectedApp extends Component {
   constructor(props) {
     super(props);
     this.state = { username: "" };
   }
+
   setUsername = username => {
     this.setState({ username: username });
   };
-
   render() {
     if (this.props.snup) {
       return <Login username={this.setUsername} />;
@@ -23,7 +24,6 @@ class UnconnectedApp extends Component {
     return <Signup />;
   }
 }
-
 let mapStateToProps = state => {
   return { snup: state.signup, login: state.loggedIn };
 };

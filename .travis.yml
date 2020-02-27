@@ -18,7 +18,12 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
+  local_dir: build
   on:
+<<<<<<< HEAD
     branch: temp
+=======
+    branch: master
+>>>>>>> dbb2cd2610a464b9b2e94234e7bd37f9dd580376
 #after_deploy:
 #

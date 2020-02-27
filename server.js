@@ -16,10 +16,10 @@ let url =
   "mongodb+srv://bob:bobsue@cluster0-vtck9.mongodb.net/test?retryWrites=true&w=majority";
 MongoClient.connect(url, { useUnifiedTopology: true }, (err, db) => {
   dbo = db.db("Vibez");
-}); // depends on what kind of data base I am going to use, de(name) name will change.
+});
 
-// Your endpoints go after this line
 app.post("/signup", upload.none(), (req, res) => {
+  console.log("signup", req.body);
   let name = req.body.username;
   let pwd = req.body.password;
   dbo.collection("users").insertOne({ username: name, password: pwd });
@@ -36,22 +36,41 @@ app.post("/login", upload.none(), (req, res) => {
       res.send({ success: false });
     } else if (user === null) {
       res.send({ success: false });
-    } else if (user.password === pwd) {
+    } else if (user.password == pwd) {
       res.send({ success: true });
     } else res.send(JSON.stringify({ success: false }));
   });
 });
-
 app.post("/new-post", upload.single("img"), (req, res) => {
+  console.log("request to /new-post. body", req.body);
   let file = req.file;
   let frontendPath = "/uploads/" + file.filename;
   dbo.collection("posts").insertOne({
+    username: req.body.username,
     description: req.body.description,
-    frontendPath: frontendPath,
-    username: req.body.username
+    frontendPath: frontendPath
   });
   res.send(JSON.stringify({ success: true }));
 });
+
+//endpoint for calling all picture information from mongoDB.
+app.get("/find-all", (req, res) => {
+  console.log("request to /find-all");
+  dbo
+    .collection("posts")
+    .find({})
+    .toArray((err, ps) => {
+      if (err) {
+        console.log("error", err);
+        res.send("fail");
+        return;
+      }
+      console.log("posts", ps);
+      res.send(JSON.stringify(ps));
+    });
+});
+// Your endpoints go after this line
+
 // Your endpoints go before this line
 
 app.all("/*", (req, res, next) => {

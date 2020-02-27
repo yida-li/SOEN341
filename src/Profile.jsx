@@ -1,56 +1,38 @@
-import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+//import NavBar from "./navbar.jsx";
 
-import About from './About';
 class Profile extends Component {
   render() {
     return (
-      <div
-        style={{
-          backgroundColor: 'palevioletred'
-        }}
-      >
-        <Route exact path='/about' Component={About} />
-        <div>
-          <h1
-            style={{
-              backgroundColor: 'paleturquoise',
-              width: '1000px',
-              height: '50px'
-            }}
-          >
-            <div class='righto'>
-              <i class='fas fa-photo-video'></i> Vibe Page
+      <div>
+        <h1 className="test">Welcome, {this.props.user}!</h1>
+
+        <button className="profile-btn">Edit</button>
+        <button className="profile-btn">F++</button>
+        <Link to="/upload">
+          <button className="profile-btn">P++</button>
+        </Link>
+        <h2 className="descrip2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </h2>
+
+        {this.props.posts.map(e => {
+          return (
+            <div className="picsadded">
+              <img height="50%" width="50%" src={e.frontendPath} />
+              <div>{e.description}</div>
             </div>
-          </h1>
-
-          <ul>
-            <li>
-              <a href='https://www.google.com/'>Home</a>
-            </li>
-            <li>
-              <a href='/about'>About</a>
-            </li>
-          </ul>
-        </div>
-
-        <h1>Welcome {this.props.user}</h1>
-
-        <Link to='/upload'>
-          <button>Upload Picture</button>
-        </Link>
-        <Link to='/upload'>
-          <button>Followers</button>
-          <Link to='/upload'>
-            <button>Followed</button>
-          </Link>
-          <Link to='/upload'>
-            <button>Manage Photo</button>
-          </Link>
-        </Link>
+          );
+        })}
       </div>
     );
-    1;
   }
 }
 export default Profile;
