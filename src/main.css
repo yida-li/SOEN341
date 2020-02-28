@@ -41,6 +41,12 @@
   background: #488ab0;
   color: #fff;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #005a8f;
+  color: rgb(255, 255, 255);
 }
 
 .signup-btn-b {
@@ -150,7 +156,7 @@
   font-size: 13px;
   padding: 6px 24px;
   text-decoration: none;
-  margin: 10px 5px 12px;
+  margin: 10px 10px 12px;
 }
 .profile-btn:hover {
   background-color: #ffffff;
@@ -159,6 +165,10 @@
 .profile-btn:active {
   position: relative;
   top: 1px;
+}
+
+.profile-btn-left {
+  margin-left: 15px;
 }
 
 .profile-btn-plus {
@@ -189,6 +199,18 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+.body-other {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   color: #fff;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -245,8 +267,70 @@ p {
 }
 
 .tb5 {
-  border: 2px solid #456879;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: white;
   border-radius: 10px;
-  height: 22px;
+  height: 100px;
   width: 230px;
+  margin-left: 50px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  position: center;
+}
+
+.tb5:focus {
+  outline: none !important;
+  border: 1px solid white;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.nodecor {
+  text-decoration: none;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.push-upload-btns {
+  margin-left: 60px;
+}
+
+.push-profile-btns {
+  margin-left: 10px;
+}
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Upload";
+  color: white;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 6px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 10pt;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  padding: 6px 24px;
+  margin-left: 50px;
+}
+.custom-file-input:hover::before {
+  color: black;
+  background-color: white;
+}
+
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
