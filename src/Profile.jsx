@@ -7,12 +7,13 @@ class Profile extends Component {
     return (
       <div>
         <h1 className="test">Welcome, {this.props.user}!</h1>
-
-        <button className="profile-btn">Edit</button>
-        <button className="profile-btn">F++</button>
-        <Link to="/upload">
-          <button className="profile-btn">P++</button>
-        </Link>
+        <div className="push-profile-btns">
+          <button className="profile-btn">Edit Profile</button>
+          <button className="profile-btn">Following</button>
+          <Link to="/upload">
+            <button className="profile-btn">Add Picture</button>
+          </Link>
+        </div>
         <h2 className="descrip2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
