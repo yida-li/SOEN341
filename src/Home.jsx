@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import { Route, BrowserRouter } from "react-router-dom";
-import Upload from "./Upload.jsx";
-import Profile from "./Profile.jsx";
+import React, { Component } from 'react';
+import { Route, BrowserRouter } from 'react-router-dom';
+import Upload from './Upload.jsx';
+import Profile from './Profile.jsx';
+import Followers from './Followers.jsx';
+import News from './News.jsx';
 
 class Home extends Component {
   constructor(props) {
@@ -9,15 +11,21 @@ class Home extends Component {
     this.state = { posts: [] };
   }
   componentDidMount = async () => {
-    let response = await fetch("/find-all");
+    let response = await fetch('/find-all');
     let body = await response.text();
-    console.log("/find-all response", body);
+    console.log('/find-all response', body);
     body = JSON.parse(body);
     this.setState({ posts: body });
   };
   renderUpload = () => {
     // adding new stuff
     return <Upload user={this.props.username} />;
+  };
+  renderFollower = () => {
+    return <Followers user={this.props.username} />;
+  };
+  renderNews = () => {
+    return <News user={this.props.username} />;
   };
   renderProfile = () => {
     return (
@@ -30,8 +38,10 @@ class Home extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Route exact={true} path="/" render={this.renderProfile} />
-        <Route exact={true} path="/upload" render={this.renderUpload} />
+        <Route exact={true} path='/' render={this.renderProfile} />
+        <Route exact={true} path='/upload' render={this.renderUpload} />
+        <Route exact={true} path='/followers' render={this.renderFollower} />
+        <Route exact={true} path='/news' render={this.renderNews} />
       </BrowserRouter>
     );
   }

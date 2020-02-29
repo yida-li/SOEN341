@@ -329,7 +329,10 @@ p {
   text-decoration: none;
   color: white;
 }
-
+.nodecory {
+  text-decoration: palegreen;
+  color: white;
+}
 ::placeholder {
   color: white;
 }

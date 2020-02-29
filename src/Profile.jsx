@@ -13,8 +13,14 @@ class Profile extends Component {
           <Link to='/upload'>
             <button className='profile-btn'>Add Picture</button>
           </Link>
+          <Link to='/followers'>
+            <button className='profile-btn'>My Followers</button>
+          </Link>
+          <Link to='/news'>
+            <button className='profile-btn'>NewsFeed</button>
+          </Link>
           <div class='dropdown'>
-            <button className='profile-btn'>Followers</button>
+            <button className='profile-btn'>Settings</button>
             <div className='dropdown-content'>
               <a href='#'>I am still thinking</a>
               <a href='#'>I am still studying</a>
