@@ -1,20 +1,28 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 //import NavBar from "./navbar.jsx";
 
 class Profile extends Component {
   render() {
     return (
       <div>
-        <h1 className="test">Welcome, {this.props.user}!</h1>
-        <div className="push-profile-btns">
-          <button className="profile-btn">Edit Profile</button>
-          <button className="profile-btn">Following</button>
-          <Link to="/upload">
-            <button className="profile-btn">Add Picture</button>
+        <h1 className='test'>Welcome, {this.props.user}!</h1>
+        <div className='push-profile-btns'>
+          <button className='profile-btn'>Edit Profile</button>
+          <button className='profile-btn'>Following</button>
+          <Link to='/upload'>
+            <button className='profile-btn'>Add Picture</button>
           </Link>
+          <div class='dropdown'>
+            <button className='profile-btn'>Followers</button>
+            <div className='dropdown-content'>
+              <a href='#'>I am still thinking</a>
+              <a href='#'>I am still studying</a>
+              <a href='#'>I am still learning</a>
+            </div>
+          </div>
         </div>
-        <h2 className="descrip2">
+        <h2 className='descrip2'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -26,8 +34,8 @@ class Profile extends Component {
 
         {this.props.posts.map(e => {
           return (
-            <div className="picsadded">
-              <img height="50%" width="50%" src={e.frontendPath} />
+            <div className='picsadded'>
+              <img height='50%' width='50%' src={e.frontendPath} />
               <div>{e.description}</div>
             </div>
           );
