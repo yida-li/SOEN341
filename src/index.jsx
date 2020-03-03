@@ -4,7 +4,6 @@ import App from "./App.jsx";
 import React from "react";
 import { Provider } from "react-redux";
 import store from "./store.js";
-//import "bootstrap/dist/css/bootstrap.css";
 
 import reloadMagic from "./reload-magic-client.js"; // automatic reload
 reloadMagic(); // automatic reload

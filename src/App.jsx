@@ -3,13 +3,20 @@ import Signup from "./Signup.jsx";
 import Login from "./Login.jsx";
 import { connect } from "react-redux";
 import Home from "./Home.jsx";
-//import "bootstrap/dist/css/bootstrap.css";
 
 class UnconnectedApp extends Component {
   constructor(props) {
     super(props);
     this.state = { username: "" };
   }
+  componentDidMount = async () => {
+    let response = await fetch("/all-users");
+    let body = await response.text();
+    console.log("/all-users response", body);
+    body = JSON.parse(body);
+    this.setState({ user: body });
+    this.props.dispatch({ type: "SET_USER", users: body });
+  };
 
   setUsername = username => {
     this.setState({ username: username });

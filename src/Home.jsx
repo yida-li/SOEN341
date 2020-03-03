@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
-import Upload from './Upload.jsx';
-import Profile from './Profile.jsx';
-import Followers from './Followers.jsx';
-import News from './News.jsx';
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { posts: [] };
-  }
+import React, { Component } from "react";
+import { Route, BrowserRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import Upload from "./Upload.jsx";
+import Profile from "./Profile.jsx";
+
+
+class UnconnectedHome extends Component {
   componentDidMount = async () => {
     let response = await fetch('/find-all');
     let body = await response.text();
     console.log('/find-all response', body);
     body = JSON.parse(body);
-    this.setState({ posts: body });
+    this.props.dispatch({ type: "SET_POST", posts: body });
   };
+
   renderUpload = () => {
     // adding new stuff
     return <Upload user={this.props.username} />;
@@ -30,8 +28,8 @@ class Home extends Component {
   renderProfile = () => {
     return (
       <Profile
-        user={this.props.username}
-        posts={this.state.posts.filter(e => e.username === this.props.username)}
+        mainUser={this.props.username}
+        // posts={this.state.posts.filter(e => e.username === this.props.username)}
       />
     );
   };
@@ -46,4 +44,7 @@ class Home extends Component {
     );
   }
 }
+
+let Home = connect()(UnconnectedHome);
+
 export default Home;

@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <title>Vibez</title>\n    <link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap\" rel=\"stylesheet\"></link>\n</head>\n\n<body>\n    <div id=\"root\">\n    </div>\n</body>\n\n</html>\n";
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <title>Vibez</title>\n    <link href=\"https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap\" rel=\"stylesheet\"></link>\n    <script src=\"https://use.fontawesome.com/a1d7e48cd8.js\"></script>\n</head>\n\n<body>\n    <div id=\"root\">\n    </div>\n</body>\n\n</html>\n";
 
 /***/ })
 

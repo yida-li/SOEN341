@@ -33,8 +33,12 @@ class Upload extends Component {
           type="file"
           onChange={this.handleImage}
         />
-        <div>
-          <img height="150px" src={this.state.previewImg} />
+        <div className="hidden">
+          <img
+            className="profile-pic-upload-2"
+            height="150px"
+            src={this.state.previewImg}
+          />
         </div>
         <div>
           <textarea
