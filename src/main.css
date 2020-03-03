@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 .signup-form {
   width: 300px;
   padding: 20px;
@@ -333,4 +341,107 @@ p {
 
 .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.profile-pic-upload {
+  border-radius: 50%;
+  /*border: 3px solid white;
+  padding: 5px;*/
+}
+
+.profile-pic-upload-2 {
+  border-radius: 3%;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+/*.hidden {
+  height: 0px;
+  overflow: hidden;
+}*/
+
+.custom-file-input-1 {
+  color: transparent;
+}
+.custom-file-input-1::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input-1::before {
+  content: "Upload Profile Picture";
+  color: white;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 6px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 10pt;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  padding: 6px 24px;
+  margin-left: 47px;
+}
+.custom-file-input-1:hover::before {
+  color: black;
+  background-color: white;
+}
+
+.custom-file-input-1:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+/*search*/
+
+.search_box {
+  width: 50%;
+  position: relative;
+}
+
+.search_box input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  outline: non;
+  margin: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.fa-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 25px;
+}
+
+.description-box-container {
+  text-align: center;
+}
+
+.description-box {
+  border: 3px solid white;
+  width: 90%;
+  height: 3em;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  padding: 6px 24px;
+  display: inline-block;
+}
+
+.picsadded {
+  border: 1px solid white;
+  border-radius: 7%;
 }

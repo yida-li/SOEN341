@@ -206,8 +206,11 @@ module.exports = _inheritsLoose;
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
+
 // Module
-exports.push([module.i, ".signup-form {\n  width: 300px;\n  padding: 20px;\n  text-align: center;\n\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  overflow: hidden;\n}\n\n.signup-form h1 {\n  margin-top: 5px;\n  font-family: \"Permanent Marker\", cursive;\n  color: #fff;\n  font-size: 50px;\n}\n\n.signup-form input {\n  display: block;\n  width: 100%;\n  padding: 0 16px;\n  height: 44px;\n  text-align: center;\n  box-sizing: border-box;\n  outline: none;\n  border: none;\n  font-family: \"montserrat\", sans-serif;\n}\n\n.txtb {\n  margin: 20px 0;\n  background: rgba(255, 255, 255, 0.5);\n  border-radius: 6px;\n}\n\n.signup-btn {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background: #488ab0;\n  color: #fff;\n  border-radius: 6px;\n  cursor: pointer;\n}\n\n.signup-btn:hover {\n  background-color: #005a8f;\n  color: rgb(255, 255, 255);\n}\n\n.signup-btn-b {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background: #488ab0;\n  color: #fff;\n}\n\n.overlay {\n  z-index: 50;\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n\n.popup {\n  z-index: 100;\n  position: fixed;\n  top: 200px;\n  left: 200px;\n  right: 200px;\n  background-color: white;\n}\n\n.test {\n  border: 3px solid black;\n}\n\n.vibe-btn {\n  position: relative;\n  outline: none;\n  text-decoration: none;\n  border-radius: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  text-transform: uppercase;\n  height: 40px;\n  width: 100px;\n  opacity: 1;\n  background-color: #ffffff;\n  border: 1px solid rgba(22, 76, 167, 0.6);\n  margin-left: 100px;\n}\n.vibe-btn span {\n  color: #164ca7;\n  font-size: 12px;\n  font-weight: 500;\n  letter-spacing: 0.7px;\n}\n.vibe-btn:hover {\n  animation: rotate 0.7s ease-in-out both;\n}\n.vibe-btn:hover span {\n  animation: storm 0.7s ease-in-out both;\n  animation-delay: 0.06s;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(0deg) translate3d(0, 0, 0);\n  }\n  25% {\n    transform: rotate(3deg) translate3d(0, 0, 0);\n  }\n  50% {\n    transform: rotate(-3deg) translate3d(0, 0, 0);\n  }\n  75% {\n    transform: rotate(1deg) translate3d(0, 0, 0);\n  }\n  100% {\n    transform: rotate(0deg) translate3d(0, 0, 0);\n  }\n}\n@keyframes storm {\n  0% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n  25% {\n    transform: translate3d(4px, 0, 0) translateZ(0);\n  }\n  50% {\n    transform: translate3d(-3px, 0, 0) translateZ(0);\n  }\n  75% {\n    transform: translate3d(2px, 0, 0) translateZ(0);\n  }\n  100% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n}\n\n.profile-btn {\n  background-color: transparent;\n  border-radius: 6px;\n  border: 1px solid #ffffff;\n  display: inline-block;\n  cursor: pointer;\n  color: #ffffff;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  text-decoration: none;\n  margin: 10px 10px 12px;\n}\n.profile-btn:hover {\n  background-color: #ffffff;\n  color: black;\n}\n.profile-btn:active {\n  position: relative;\n  top: 1px;\n}\n\n.profile-btn-left {\n  margin-left: 15px;\n}\n\n.profile-btn-plus {\n  box-shadow: inset 0px 1px 0px 0px #ffffff;\n  background-color: #242323;\n  border-radius: 6px;\n  border: 1px solid #d6c8c8;\n  display: inline-block;\n  cursor: pointer;\n  color: #ffffff;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n\n  padding: 6px 24px;\n  text-decoration: none;\n  margin: 10px 5px 10px;\n}\n.profile-btn-plus:hover {\n  background-color: #161616;\n}\n.profile-btn-plus:active {\n  position: relative;\n  top: 1px;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  color: #fff;\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\n  background-size: 400% 400%;\n  position: relative;\n  animation: change 10s ease-in-out infinite;\n}\n\n.body-other {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  color: #fff;\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\n  background-size: 400% 400%;\n  position: relative;\n  animation: change 10s ease-in-out infinite;\n}\n\n@keyframes change {\n  0% {\n    background-position: 0 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0 50%;\n  }\n}\n\nh1 {\n  color: #111;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 200px;\n  font-weight: bold;\n  letter-spacing: -1px;\n  line-height: 1;\n  text-align: center;\n  margin-bottom: 10px;\n}\n\np {\n  color: #685206;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  margin: 0 0 24px;\n  text-align: justify;\n  text-justify: inter-word;\n}\n\n.description-txt {\n  margin: 30px;\n}\n\n.descrip2 {\n  font-size: 10px;\n  text-transform: uppercase;\n  font-family: \"Helvetica Neue\", sans-serif;\n  letter-spacing: 2px;\n  border: 3px solid #fff;\n  position: relative;\n  padding: 3rem 5rem;\n  margin-bottom: 20px;\n}\n\n.tb5 {\n  background: transparent;\n  border-radius: 5px;\n  border: 1px solid #ffffff;\n  color: white;\n  border-radius: 10px;\n  height: 100px;\n  width: 230px;\n  margin-left: 50px;\n  margin-top: 6px;\n  margin-bottom: 10px;\n  position: center;\n}\n\n.tb5:focus {\n  outline: none !important;\n  border: 1px solid white;\n  box-shadow: 0 0 10px #719ece;\n}\n\n.nodecor {\n  text-decoration: none;\n  color: white;\n}\n\n::placeholder {\n  color: white;\n}\n\n.push-upload-btns {\n  margin-left: 60px;\n}\n\n.push-profile-btns {\n  margin-left: 10px;\n}\n\n.custom-file-input {\n  color: transparent;\n}\n.custom-file-input::-webkit-file-upload-button {\n  visibility: hidden;\n}\n.custom-file-input::before {\n  content: \"Upload\";\n  color: white;\n  display: inline-block;\n  background: transparent;\n  border: 1px solid rgb(255, 255, 255);\n  border-radius: 6px;\n  outline: none;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  cursor: pointer;\n  font-size: 10pt;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  margin-left: 50px;\n}\n.custom-file-input:hover::before {\n  color: black;\n  background-color: white;\n}\n\n.custom-file-input:active::before {\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\n}\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto\", sans-serif;\n}\n\n.signup-form {\n  width: 300px;\n  padding: 20px;\n  text-align: center;\n\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  overflow: hidden;\n}\n\n.signup-form h1 {\n  margin-top: 5px;\n  font-family: \"Permanent Marker\", cursive;\n  color: #fff;\n  font-size: 50px;\n}\n\n.signup-form input {\n  display: block;\n  width: 100%;\n  padding: 0 16px;\n  height: 44px;\n  text-align: center;\n  box-sizing: border-box;\n  outline: none;\n  border: none;\n  font-family: \"montserrat\", sans-serif;\n}\n\n.txtb {\n  margin: 20px 0;\n  background: rgba(255, 255, 255, 0.5);\n  border-radius: 6px;\n}\n\n.signup-btn {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background: #488ab0;\n  color: #fff;\n  border-radius: 6px;\n  cursor: pointer;\n}\n\n.signup-btn:hover {\n  background-color: #005a8f;\n  color: rgb(255, 255, 255);\n}\n\n.signup-btn-b {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background: #488ab0;\n  color: #fff;\n}\n\n.overlay {\n  z-index: 50;\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n\n.popup {\n  z-index: 100;\n  position: fixed;\n  top: 200px;\n  left: 200px;\n  right: 200px;\n  background-color: white;\n}\n\n.test {\n  border: 3px solid black;\n}\n\n.vibe-btn {\n  position: relative;\n  outline: none;\n  text-decoration: none;\n  border-radius: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  text-transform: uppercase;\n  height: 40px;\n  width: 100px;\n  opacity: 1;\n  background-color: #ffffff;\n  border: 1px solid rgba(22, 76, 167, 0.6);\n  margin-left: 100px;\n}\n.vibe-btn span {\n  color: #164ca7;\n  font-size: 12px;\n  font-weight: 500;\n  letter-spacing: 0.7px;\n}\n.vibe-btn:hover {\n  animation: rotate 0.7s ease-in-out both;\n}\n.vibe-btn:hover span {\n  animation: storm 0.7s ease-in-out both;\n  animation-delay: 0.06s;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(0deg) translate3d(0, 0, 0);\n  }\n  25% {\n    transform: rotate(3deg) translate3d(0, 0, 0);\n  }\n  50% {\n    transform: rotate(-3deg) translate3d(0, 0, 0);\n  }\n  75% {\n    transform: rotate(1deg) translate3d(0, 0, 0);\n  }\n  100% {\n    transform: rotate(0deg) translate3d(0, 0, 0);\n  }\n}\n@keyframes storm {\n  0% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n  25% {\n    transform: translate3d(4px, 0, 0) translateZ(0);\n  }\n  50% {\n    transform: translate3d(-3px, 0, 0) translateZ(0);\n  }\n  75% {\n    transform: translate3d(2px, 0, 0) translateZ(0);\n  }\n  100% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n}\n\n.profile-btn {\n  background-color: transparent;\n  border-radius: 6px;\n  border: 1px solid #ffffff;\n  display: inline-block;\n  cursor: pointer;\n  color: #ffffff;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  text-decoration: none;\n  margin: 10px 10px 12px;\n}\n.profile-btn:hover {\n  background-color: #ffffff;\n  color: black;\n}\n.profile-btn:active {\n  position: relative;\n  top: 1px;\n}\n\n.profile-btn-left {\n  margin-left: 15px;\n}\n\n.profile-btn-plus {\n  box-shadow: inset 0px 1px 0px 0px #ffffff;\n  background-color: #242323;\n  border-radius: 6px;\n  border: 1px solid #d6c8c8;\n  display: inline-block;\n  cursor: pointer;\n  color: #ffffff;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n\n  padding: 6px 24px;\n  text-decoration: none;\n  margin: 10px 5px 10px;\n}\n.profile-btn-plus:hover {\n  background-color: #161616;\n}\n.profile-btn-plus:active {\n  position: relative;\n  top: 1px;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  color: #fff;\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\n  background-size: 400% 400%;\n  position: relative;\n  animation: change 10s ease-in-out infinite;\n}\n\n.body-other {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  color: #fff;\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\n  background-size: 400% 400%;\n  position: relative;\n  animation: change 10s ease-in-out infinite;\n}\n\n@keyframes change {\n  0% {\n    background-position: 0 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0 50%;\n  }\n}\n\nh1 {\n  color: #111;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 200px;\n  font-weight: bold;\n  letter-spacing: -1px;\n  line-height: 1;\n  text-align: center;\n  margin-bottom: 10px;\n}\n\np {\n  color: #685206;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  margin: 0 0 24px;\n  text-align: justify;\n  text-justify: inter-word;\n}\n\n.description-txt {\n  margin: 30px;\n}\n\n.descrip2 {\n  font-size: 10px;\n  text-transform: uppercase;\n  font-family: \"Helvetica Neue\", sans-serif;\n  letter-spacing: 2px;\n  border: 3px solid #fff;\n  position: relative;\n  padding: 3rem 5rem;\n  margin-bottom: 20px;\n}\n\n.tb5 {\n  background: transparent;\n  border-radius: 5px;\n  border: 1px solid #ffffff;\n  color: white;\n  border-radius: 10px;\n  height: 100px;\n  width: 230px;\n  margin-left: 50px;\n  margin-top: 6px;\n  margin-bottom: 10px;\n  position: center;\n}\n\n.tb5:focus {\n  outline: none !important;\n  border: 1px solid white;\n  box-shadow: 0 0 10px #719ece;\n}\n\n.nodecor {\n  text-decoration: none;\n  color: white;\n}\n\n::placeholder {\n  color: white;\n}\n\n.push-upload-btns {\n  margin-left: 60px;\n}\n\n.push-profile-btns {\n  margin-left: 10px;\n}\n\n.custom-file-input {\n  color: transparent;\n}\n.custom-file-input::-webkit-file-upload-button {\n  visibility: hidden;\n}\n.custom-file-input::before {\n  content: \"Upload\";\n  color: white;\n  display: inline-block;\n  background: transparent;\n  border: 1px solid rgb(255, 255, 255);\n  border-radius: 6px;\n  outline: none;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  cursor: pointer;\n  font-size: 10pt;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  margin-left: 50px;\n}\n.custom-file-input:hover::before {\n  color: black;\n  background-color: white;\n}\n\n.custom-file-input:active::before {\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\n}\n\n.profile-pic-upload {\n  border-radius: 50%;\n  /*border: 3px solid white;\n  padding: 5px;*/\n}\n\n.profile-pic-upload-2 {\n  border-radius: 3%;\n  margin-left: 50px;\n  margin-bottom: 10px;\n}\n\n/*.hidden {\n  height: 0px;\n  overflow: hidden;\n}*/\n\n.custom-file-input-1 {\n  color: transparent;\n}\n.custom-file-input-1::-webkit-file-upload-button {\n  visibility: hidden;\n}\n.custom-file-input-1::before {\n  content: \"Upload Profile Picture\";\n  color: white;\n  display: inline-block;\n  background: transparent;\n  border: 1px solid rgb(255, 255, 255);\n  border-radius: 6px;\n  outline: none;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  cursor: pointer;\n  font-size: 10pt;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  margin-left: 47px;\n}\n.custom-file-input-1:hover::before {\n  color: black;\n  background-color: white;\n}\n\n.custom-file-input-1:active::before {\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\n}\n\n/*search*/\n\n.search_box {\n  width: 50%;\n  position: relative;\n}\n\n.search_box input[type=\"text\"] {\n  width: 100%;\n  padding: 20px;\n  padding-right: 60px;\n  box-sizing: border-box;\n  background: rgba(0, 0, 0, 0.3);\n  border: 1px solid #fff;\n  border-radius: 10px;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  color: #fff;\n  outline: non;\n  margin: 20px;\n}\n\n::-webkit-input-placeholder {\n  color: #fff;\n}\n\n.fa-search {\n  position: absolute;\n  top: 0;\n  right: 0;\n  color: white;\n  font-size: 25px;\n}\n\n.description-box-container {\n  text-align: center;\n}\n\n.description-box {\n  border: 3px solid white;\n  width: 90%;\n  height: 3em;\n\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  display: inline-block;\n}\n\n.picsadded {\n  border: 1px solid white;\n  border-radius: 7%;\n}\n", ""]);
 
 
 
@@ -35153,11 +35156,25 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- //import "bootstrap/dist/css/bootstrap.css";
+
 
 class UnconnectedApp extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
     super(props);
+
+    _defineProperty(this, "componentDidMount", async () => {
+      let response = await fetch("/all-users");
+      let body = await response.text();
+      console.log("/all-users response", body);
+      body = JSON.parse(body);
+      this.setState({
+        user: body
+      });
+      this.props.dispatch({
+        type: "SET_USER",
+        users: body
+      });
+    });
 
     _defineProperty(this, "setUsername", username => {
       this.setState({
@@ -35212,8 +35229,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Upload_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Upload.jsx */ "./src/Upload.jsx");
-/* harmony import */ var _Profile_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Profile.jsx */ "./src/Profile.jsx");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Upload_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Upload.jsx */ "./src/Upload.jsx");
+/* harmony import */ var _Profile_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Profile.jsx */ "./src/Profile.jsx");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
@@ -35221,37 +35239,35 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(props) {
-    super(props);
+
+class UnconnectedHome extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
 
     _defineProperty(this, "componentDidMount", async () => {
       let response = await fetch("/find-all");
       let body = await response.text();
       console.log("/find-all response", body);
       body = JSON.parse(body);
-      this.setState({
+      this.props.dispatch({
+        type: "SET_POST",
         posts: body
       });
     });
 
     _defineProperty(this, "renderUpload", () => {
       // adding new stuff
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Upload_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Upload_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
         user: this.props.username
       });
     });
 
     _defineProperty(this, "renderProfile", () => {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Profile_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        user: this.props.username,
-        posts: this.state.posts.filter(e => e.username === this.props.username)
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Profile_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        mainUser: this.props.username // posts={this.state.posts.filter(e => e.username === this.props.username)}
+
       });
     });
-
-    this.state = {
-      posts: []
-    };
   }
 
   render() {
@@ -35268,6 +35284,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 }
 
+let Home = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])()(UnconnectedHome);
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
@@ -35339,7 +35356,6 @@ class UnconnectedLogin extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "signup-form"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      class: "",
       onSubmit: this.handleSubmit
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Vibez"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
       type: "text",
@@ -35377,14 +35393,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
- //import NavBar from "./navbar.jsx";
 
-class Profile extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+
+
+
+class UnconnectedProfile extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+
+    _defineProperty(this, "handleSearch", event => {
+      const query = event.target.value;
+      const results = this.props.user.filter(item => {
+        return item.username.includes(query);
+      });
+      console.log(results);
+      this.setState({
+        results: results
+      });
+    });
+
+    this.state = {
+      results: []
+    };
+  }
+
   render() {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    const profileUser = this.props.user.find(e => e.username === this.props.mainUser);
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "search_box"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      placeholder: "Search Users",
+      onChange: this.handleSearch
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.state.results.map(e => {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, e.username);
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
       className: "test"
-    }, "Welcome, ", this.props.user, "!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, "Welc", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "profile-pic-upload",
+      height: "100px",
+      src: profileUser.frontendPath
+    }), "me, ", this.props.mainUser, "!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "push-profile-btns"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
       className: "profile-btn"
@@ -35396,19 +35448,30 @@ class Profile extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       className: "profile-btn"
     }, "Add Picture"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
       className: "descrip2"
-    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), this.props.posts.map(e => {
+    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), this.props.post.filter(e => e.username === this.props.mainUser).map(e => {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "picsadded"
+        className: "description-box-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "profile-pic-upload-2",
         height: "50%",
         width: "50%",
         src: e.frontendPath
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, e.description));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "descrip2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, e.description)));
     }));
   }
 
 }
 
+let mapStateToProps = state => {
+  return {
+    post: state.posts,
+    user: state.users
+  };
+};
+
+let Profile = Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps)(UnconnectedProfile);
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
 
 /***/ }),
@@ -35439,6 +35502,7 @@ class UnconnectedSignup extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] 
       let data = new FormData();
       data.append("username", this.state.username);
       data.append("password", this.state.password);
+      data.append("img", this.state.file);
       let response = await fetch("/signup", {
         method: "POST",
         body: data
@@ -35477,9 +35541,18 @@ class UnconnectedSignup extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] 
       });
     });
 
+    _defineProperty(this, "fileChangeHandler", event => {
+      this.setState({
+        file: event.target.files[0],
+        previewImg: URL.createObjectURL(event.target.files[0])
+      });
+    });
+
     this.state = {
       username: undefined,
-      password: undefined
+      password: undefined,
+      file: "",
+      previewImg: ""
     };
   }
 
@@ -35487,7 +35560,6 @@ class UnconnectedSignup extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] 
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "signup-form"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      class: "",
       onSubmit: this.handleSubmit
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Vibez"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
       type: "text",
@@ -35499,6 +35571,14 @@ class UnconnectedSignup extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] 
       placeholder: "Password",
       className: "txtb",
       onChange: this.handlePassword
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "custom-file-input-1",
+      type: "file",
+      onChange: this.fileChangeHandler
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "profile-pic-upload",
+      height: "100px",
+      src: this.state.previewImg
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
       type: "submit",
       value: "Create Account",
@@ -35579,7 +35659,10 @@ class Upload extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       className: "custom-file-input",
       type: "file",
       onChange: this.handleImage
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "hidden"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "profile-pic-upload-2",
       height: "150px",
       src: this.state.previewImg
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
@@ -35629,7 +35712,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- //import "bootstrap/dist/css/bootstrap.css";
 
  // automatic reload
 
@@ -35764,10 +35846,22 @@ const reducer = (state, action) => {
     };
   }
 
-  if (action.type == "login-success") {
+  if (action.type === "login-success") {
     return { ...state,
       signup: false,
       loggedIn: true
+    };
+  }
+
+  if (action.type === "SET_POST") {
+    return { ...state,
+      posts: action.posts
+    };
+  }
+
+  if (action.type === "SET_USER") {
+    return { ...state,
+      users: action.users
     };
   }
 
@@ -35776,7 +35870,9 @@ const reducer = (state, action) => {
 
 const store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(reducer, {
   signup: false,
-  loggedIn: false
+  loggedIn: false,
+  users: [],
+  posts: []
 });
 /* harmony default export */ __webpack_exports__["default"] = (store);
 
