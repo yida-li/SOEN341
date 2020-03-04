@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -22,6 +23,7 @@ class UnconnectedProfile extends Component {
 
     return (
       <div>
+
         <div className="search_box">
           <input
             type="text"
@@ -51,7 +53,22 @@ class UnconnectedProfile extends Component {
           <button className="profile-btn">Following</button>
           <Link to="/upload">
             <button className="profile-btn">Add Picture</button>
+
           </Link>
+          <Link to='/followers'>
+            <button className='profile-btn'>My Followers</button>
+          </Link>
+          <Link to='/news'>
+            <button className='profile-btn'>NewsFeed</button>
+          </Link>
+          <div class='dropdown'>
+            <button className='profile-btn'>Settings</button>
+            <div className='dropdown-content'>
+              <a href='#'>I am still thinking</a>
+              <a href='#'>I am still studying</a>
+              <a href='#'>I am still learning</a>
+            </div>
+          </div>
         </div>
 
         <h2 className="descrip2">
@@ -63,6 +80,7 @@ class UnconnectedProfile extends Component {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </h2>
+
         {this.props.post
           .filter(e => e.username === this.props.mainUser)
           .map(e => {
@@ -80,6 +98,7 @@ class UnconnectedProfile extends Component {
               </div>
             );
           })}
+
       </div>
     );
   }
