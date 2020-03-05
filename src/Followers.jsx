@@ -5,7 +5,7 @@ class Followers extends Component {
   render() {
     return (
       <div className='container'>
-        <h2>Followers</h2>
+        <h2>List of Followers</h2>
         <div className='push-upload-btns'>
           <button className='profile-btn'>
             {' '}
@@ -14,12 +14,7 @@ class Followers extends Component {
             </Link>
           </button>
 
-          <button className='profile-btn'>
-            {' '}
-            <Link className='nodecory' to='/upload'>
-              NewsFeed Page
-            </Link>
-          </button>
+          <button className='profile-btn'>Remove Followers</button>
         </div>
       </div>
     );

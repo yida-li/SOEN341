@@ -19,13 +19,13 @@ class News extends Component {
           </button>
           <button className='profile-btn'>
             {' '}
-            <Link className='nodecory' to='/upload'>
+            <Link className='nodecor' to='/upload'>
               Upload
             </Link>
           </button>
           <button className='profile-btn'>
             {' '}
-            <Link className='nodecory' to='/followers'>
+            <Link className='nodecor' to='/followers'>
               Followers
             </Link>
           </button>
