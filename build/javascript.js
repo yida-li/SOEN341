@@ -210,7 +210,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/di
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // Module
-exports.push([module.i, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: \"Roboto\", sans-serif;\r\n}\r\n\r\n.signup-form {\r\n  width: 300px;\r\n  padding: 20px;\r\n  text-align: center;\r\n\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  overflow: hidden;\r\n}\r\n\r\n.signup-form h1 {\r\n  margin-top: 5px;\r\n  font-family: \"Permanent Marker\", cursive;\r\n  color: #fff;\r\n  font-size: 50px;\r\n}\r\n/**/\r\n.signup-form input {\r\n  display: block;\r\n  width: 100%;\r\n  padding: 0 16px;\r\n  height: 44px;\r\n  text-align: center;\r\n  box-sizing: border-box;\r\n  outline: none;\r\n  border: none;\r\n  font-family: \"montserrat\", sans-serif;\r\n}\r\n\r\n.txtb {\r\n  margin: 20px 0;\r\n  background: rgba(255, 255, 255, 0.5);\r\n  border-radius: 6px;\r\n}\r\n\r\n.signup-btn {\r\n  margin-top: 20px;\r\n  margin-bottom: 20px;\r\n  background: #488ab0;\r\n  color: #fff;\r\n  border-radius: 6px;\r\n  cursor: pointer;\r\n}\r\n\r\n.signup-btn:hover {\r\n  background-color: #005a8f;\r\n  color: rgb(255, 255, 255);\r\n}\r\n.dropbtn {\r\n  background-color: #4caf50;\r\n  color: white;\r\n  padding: 16px;\r\n  font-size: 16px;\r\n  border: none;\r\n}\r\n\r\n.dropdown {\r\n  position: relative;\r\n  display: inline-block;\r\n}\r\n\r\n.dropdown-content {\r\n  display: none;\r\n  position: absolute;\r\n  background-color: #f1f1f1;\r\n  min-width: 160px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\r\n  z-index: 1;\r\n}\r\n\r\n.dropdown-content a {\r\n  color: black;\r\n  padding: 12px 16px;\r\n  text-decoration: none;\r\n  display: block;\r\n}\r\n\r\n.dropdown-content a:hover {\r\n  background-color: #ddd;\r\n}\r\n\r\n.dropdown:hover .dropdown-content {\r\n  display: block;\r\n}\r\n\r\n.dropdown:hover .dropbtn {\r\n  background-color: #3e8e41;\r\n}\r\n.signup-btn-b {\r\n  margin-top: 20px;\r\n  margin-bottom: 20px;\r\n  background: #488ab0;\r\n  color: #fff;\r\n}\r\n\r\n.overlay {\r\n  z-index: 50;\r\n  position: fixed;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.popup {\r\n  z-index: 100;\r\n  position: fixed;\r\n  top: 200px;\r\n  left: 200px;\r\n  right: 200px;\r\n  background-color: white;\r\n}\r\n\r\n.test {\r\n  border: 3px solid black;\r\n}\r\n\r\n.vibe-btn {\r\n  position: relative;\r\n  outline: none;\r\n  text-decoration: none;\r\n  border-radius: 50px;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  cursor: pointer;\r\n  text-transform: uppercase;\r\n  height: 40px;\r\n  width: 100px;\r\n  opacity: 1;\r\n  background-color: #ffffff;\r\n  border: 1px solid rgba(22, 76, 167, 0.6);\r\n  margin-left: 100px;\r\n}\r\n.vibe-btn span {\r\n  color: #164ca7;\r\n  font-size: 12px;\r\n  font-weight: 500;\r\n  letter-spacing: 0.7px;\r\n}\r\n.vibe-btn:hover {\r\n  animation: rotate 0.7s ease-in-out both;\r\n}\r\n.vibe-btn:hover span {\r\n  animation: storm 0.7s ease-in-out both;\r\n  animation-delay: 0.06s;\r\n}\r\n\r\n@keyframes rotate {\r\n  0% {\r\n    transform: rotate(0deg) translate3d(0, 0, 0);\r\n  }\r\n  25% {\r\n    transform: rotate(3deg) translate3d(0, 0, 0);\r\n  }\r\n  50% {\r\n    transform: rotate(-3deg) translate3d(0, 0, 0);\r\n  }\r\n  75% {\r\n    transform: rotate(1deg) translate3d(0, 0, 0);\r\n  }\r\n  100% {\r\n    transform: rotate(0deg) translate3d(0, 0, 0);\r\n  }\r\n}\r\n@keyframes storm {\r\n  0% {\r\n    transform: translate3d(0, 0, 0) translateZ(0);\r\n  }\r\n  25% {\r\n    transform: translate3d(4px, 0, 0) translateZ(0);\r\n  }\r\n  50% {\r\n    transform: translate3d(-3px, 0, 0) translateZ(0);\r\n  }\r\n  75% {\r\n    transform: translate3d(2px, 0, 0) translateZ(0);\r\n  }\r\n  100% {\r\n    transform: translate3d(0, 0, 0) translateZ(0);\r\n  }\r\n}\r\n\r\n.profile-btn {\r\n  background-color: transparent;\r\n  border-radius: 6px;\r\n  border: 1px solid #ffffff;\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  color: #ffffff;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 13px;\r\n  padding: 6px 24px;\r\n  text-decoration: none;\r\n  margin: 10px 10px 12px;\r\n}\r\n.profile-btn:hover {\r\n  background-color: #ffffff;\r\n  color: black;\r\n}\r\n.profile-btn:active {\r\n  position: relative;\r\n  top: 1px;\r\n}\r\n\r\n.profile-btn-left {\r\n  margin-left: 15px;\r\n}\r\n\r\n.profile-btn-plus {\r\n  box-shadow: inset 0px 1px 0px 0px #ffffff;\r\n  background-color: #242323;\r\n  border-radius: 6px;\r\n  border: 1px solid #d6c8c8;\r\n  display: inline-block;\r\n  cursor: pointer;\r\n  color: #ffffff;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 13px;\r\n\r\n  padding: 6px 24px;\r\n  text-decoration: none;\r\n  margin: 10px 5px 10px;\r\n}\r\n.profile-btn-plus:hover {\r\n  background-color: #161616;\r\n}\r\n.profile-btn-plus:active {\r\n  position: relative;\r\n  top: 1px;\r\n}\r\n\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n  width: 100%;\r\n  height: 100vh;\r\n  color: #fff;\r\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\r\n  background-size: 400% 400%;\r\n  position: relative;\r\n  animation: change 10s ease-in-out infinite;\r\n}\r\n\r\n.body-other {\r\n  margin: 0;\r\n  padding: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  color: #fff;\r\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\r\n  background-size: 400% 400%;\r\n  position: relative;\r\n  animation: change 10s ease-in-out infinite;\r\n}\r\n\r\n@keyframes change {\r\n  0% {\r\n    background-position: 0 50%;\r\n  }\r\n  50% {\r\n    background-position: 100% 50%;\r\n  }\r\n  100% {\r\n    background-position: 0 50%;\r\n  }\r\n}\r\n\r\nh1 {\r\n  color: #111;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 200px;\r\n  font-weight: bold;\r\n  letter-spacing: -1px;\r\n  line-height: 1;\r\n  text-align: center;\r\n  margin-bottom: 10px;\r\n}\r\n\r\np {\r\n  color: #685206;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 14px;\r\n  line-height: 24px;\r\n  margin: 0 0 24px;\r\n  text-align: justify;\r\n  text-justify: inter-word;\r\n}\r\n\r\n.description-txt {\r\n  margin: 30px;\r\n}\r\n\r\n.descrip2 {\r\n  font-size: 10px;\r\n  text-transform: uppercase;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  letter-spacing: 2px;\r\n  border: 3px solid #fff;\r\n  position: relative;\r\n  padding: 3rem 5rem;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.tb5 {\r\n  background: transparent;\r\n  border-radius: 5px;\r\n  border: 1px solid #ffffff;\r\n  color: white;\r\n  border-radius: 10px;\r\n  height: 100px;\r\n  width: 230px;\r\n  margin-left: 50px;\r\n  margin-top: 6px;\r\n  margin-bottom: 10px;\r\n  position: center;\r\n}\r\n\r\n.tb5:focus {\r\n  outline: none !important;\r\n  border: 1px solid white;\r\n  box-shadow: 0 0 10px #719ece;\r\n}\r\n\r\n.nodecor {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n.nodecory {\r\n  text-decoration: palegreen;\r\n  color: white;\r\n}\r\n::placeholder {\r\n  color: white;\r\n}\r\n\r\n.push-upload-btns {\r\n  margin-left: 60px;\r\n}\r\n\r\n.push-profile-btns {\r\n  margin-left: 10px;\r\n}\r\n\r\n.custom-file-input {\r\n  color: transparent;\r\n}\r\n.custom-file-input::-webkit-file-upload-button {\r\n  visibility: hidden;\r\n}\r\n.custom-file-input::before {\r\n  content: \"Upload\";\r\n  color: white;\r\n  display: inline-block;\r\n  background: transparent;\r\n  border: 1px solid rgb(255, 255, 255);\r\n  border-radius: 6px;\r\n  outline: none;\r\n  white-space: nowrap;\r\n  -webkit-user-select: none;\r\n  cursor: pointer;\r\n  font-size: 10pt;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 13px;\r\n  padding: 6px 24px;\r\n  margin-left: 50px;\r\n}\r\n.custom-file-input:hover::before {\r\n  color: black;\r\n  background-color: white;\r\n}\r\n\r\n.custom-file-input:active::before {\r\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\r\n}\r\n\r\n.profile-pic-upload {\r\n  border-radius: 50%;\r\n  /*border: 3px solid white;\r\n  padding: 5px;*/\r\n}\r\n\r\n.profile-pic-upload-2 {\r\n  border-radius: 3%;\r\n  margin-left: 50px;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n/*.hidden {\r\n  height: 0px;\r\n  overflow: hidden;\r\n}*/\r\n\r\n.custom-file-input-1 {\r\n  color: transparent;\r\n}\r\n.custom-file-input-1::-webkit-file-upload-button {\r\n  visibility: hidden;\r\n}\r\n.custom-file-input-1::before {\r\n  content: \"Upload Profile Picture\";\r\n  color: white;\r\n  display: inline-block;\r\n  background: transparent;\r\n  border: 1px solid rgb(255, 255, 255);\r\n  border-radius: 6px;\r\n  outline: none;\r\n  white-space: nowrap;\r\n  -webkit-user-select: none;\r\n  cursor: pointer;\r\n  font-size: 10pt;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 13px;\r\n  padding: 6px 24px;\r\n  margin-left: 47px;\r\n}\r\n.custom-file-input-1:hover::before {\r\n  color: black;\r\n  background-color: white;\r\n}\r\n\r\n.custom-file-input-1:active::before {\r\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\r\n}\r\n\r\n/*search*/\r\n\r\n.search_box {\r\n  width: 50%;\r\n  position: relative;\r\n}\r\n\r\n.search_box input[type=\"text\"] {\r\n  width: 100%;\r\n  padding: 20px;\r\n  padding-right: 60px;\r\n  box-sizing: border-box;\r\n  background: rgba(0, 0, 0, 0.3);\r\n  border: 1px solid #fff;\r\n  border-radius: 10px;\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 13px;\r\n  color: #fff;\r\n  outline: non;\r\n  margin: 20px;\r\n}\r\n\r\n::-webkit-input-placeholder {\r\n  color: #fff;\r\n}\r\n\r\n.fa-search {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  color: white;\r\n  font-size: 25px;\r\n}\r\n\r\n.description-box-container {\r\n  text-align: center;\r\n}\r\n\r\n.description-box {\r\n  border: 3px solid white;\r\n  width: 90%;\r\n  height: 3em;\r\n\r\n  font-family: \"Helvetica Neue\", sans-serif;\r\n  font-size: 13px;\r\n  padding: 6px 24px;\r\n  display: inline-block;\r\n}\r\n\r\n.picsadded {\r\n  border: 1px solid white;\r\n  border-radius: 7%;\r\n}\r\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto\", sans-serif;\n}\n\n.signup-form {\n  width: 300px;\n  padding: 20px;\n  text-align: center;\n\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  overflow: hidden;\n}\n\n.signup-form h1 {\n  margin-top: 5px;\n  font-family: \"Permanent Marker\", cursive;\n  color: #fff;\n  font-size: 50px;\n}\n/**/\n.signup-form input {\n  display: block;\n  width: 100%;\n  padding: 0 16px;\n  height: 44px;\n  text-align: center;\n  box-sizing: border-box;\n  outline: none;\n  border: none;\n  font-family: \"montserrat\", sans-serif;\n}\n\n.txtb {\n  margin: 20px 0;\n  background: rgba(255, 255, 255, 0.5);\n  border-radius: 6px;\n}\n\n.signup-btn {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background: #488ab0;\n  color: #fff;\n  border-radius: 6px;\n  cursor: pointer;\n}\n\n.signup-btn:hover {\n  background-color: #005a8f;\n  color: rgb(255, 255, 255);\n}\n.dropbtn {\n  background-color: #4caf50;\n  color: white;\n  padding: 16px;\n  font-size: 16px;\n  border: none;\n}\n\n.dropdown {\n  position: relative;\n  display: inline-block;\n}\n\n.dropdown-content {\n  display: none;\n  position: absolute;\n  background-color: #f1f1f1;\n  min-width: 160px;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 1;\n}\n\n.dropdown-content a {\n  color: black;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block;\n}\n\n.dropdown-content a:hover {\n  background-color: #ddd;\n}\n\n.dropdown:hover .dropdown-content {\n  display: block;\n}\n\n.dropdown:hover .dropbtn {\n  background-color: #3e8e41;\n}\n.signup-btn-b {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background: #488ab0;\n  color: #fff;\n}\n\n.overlay {\n  z-index: 50;\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n\n.popup {\n  z-index: 100;\n  position: fixed;\n  top: 200px;\n  left: 200px;\n  right: 200px;\n  background-color: white;\n}\n\n.test {\n  border: 3px solid black;\n}\n\n.vibe-btn {\n  position: relative;\n  outline: none;\n  text-decoration: none;\n  border-radius: 50px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  text-transform: uppercase;\n  height: 40px;\n  width: 100px;\n  opacity: 1;\n  background-color: #ffffff;\n  border: 1px solid rgba(22, 76, 167, 0.6);\n  margin-left: 100px;\n}\n.vibe-btn span {\n  color: #164ca7;\n  font-size: 12px;\n  font-weight: 500;\n  letter-spacing: 0.7px;\n}\n.vibe-btn:hover {\n  animation: rotate 0.7s ease-in-out both;\n}\n.vibe-btn:hover span {\n  animation: storm 0.7s ease-in-out both;\n  animation-delay: 0.06s;\n}\n\n@keyframes rotate {\n  0% {\n    transform: rotate(0deg) translate3d(0, 0, 0);\n  }\n  25% {\n    transform: rotate(3deg) translate3d(0, 0, 0);\n  }\n  50% {\n    transform: rotate(-3deg) translate3d(0, 0, 0);\n  }\n  75% {\n    transform: rotate(1deg) translate3d(0, 0, 0);\n  }\n  100% {\n    transform: rotate(0deg) translate3d(0, 0, 0);\n  }\n}\n@keyframes storm {\n  0% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n  25% {\n    transform: translate3d(4px, 0, 0) translateZ(0);\n  }\n  50% {\n    transform: translate3d(-3px, 0, 0) translateZ(0);\n  }\n  75% {\n    transform: translate3d(2px, 0, 0) translateZ(0);\n  }\n  100% {\n    transform: translate3d(0, 0, 0) translateZ(0);\n  }\n}\n\n.profile-btn {\n  background-color: transparent;\n  border-radius: 6px;\n  border: 1px solid #ffffff;\n  display: inline-block;\n  cursor: pointer;\n  color: #ffffff;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  text-decoration: none;\n  margin: 10px 10px 12px;\n}\n.profile-btn:hover {\n  background-color: #ffffff;\n  color: black;\n}\n.profile-btn:active {\n  position: relative;\n  top: 1px;\n}\n\n.profile-btn-left {\n  margin-left: 15px;\n}\n\n.profile-btn-plus {\n  box-shadow: inset 0px 1px 0px 0px #ffffff;\n  background-color: #242323;\n  border-radius: 6px;\n  border: 1px solid #d6c8c8;\n  display: inline-block;\n  cursor: pointer;\n  color: #ffffff;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n\n  padding: 6px 24px;\n  text-decoration: none;\n  margin: 10px 5px 10px;\n}\n.profile-btn-plus:hover {\n  background-color: #161616;\n}\n.profile-btn-plus:active {\n  position: relative;\n  top: 1px;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100vh;\n  color: #fff;\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\n  background-size: 400% 400%;\n  position: relative;\n  animation: change 10s ease-in-out infinite;\n}\n\n.body-other {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  color: #fff;\n  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);\n  background-size: 400% 400%;\n  position: relative;\n  animation: change 10s ease-in-out infinite;\n}\n\n@keyframes change {\n  0% {\n    background-position: 0 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0 50%;\n  }\n}\n\nh1 {\n  color: #111;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 200px;\n  font-weight: bold;\n  letter-spacing: -1px;\n  line-height: 1;\n  text-align: center;\n  margin-bottom: 10px;\n}\n\np {\n  color: #685206;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  margin: 0 0 24px;\n  text-align: justify;\n  text-justify: inter-word;\n}\n\n.description-txt {\n  margin: 30px;\n}\n\n.descrip2 {\n  font-size: 10px;\n  text-transform: uppercase;\n  font-family: \"Helvetica Neue\", sans-serif;\n  letter-spacing: 2px;\n  border: 3px solid #fff;\n  position: relative;\n  padding: 3rem 5rem;\n  margin-bottom: 20px;\n}\n\n.tb5 {\n  background: transparent;\n  border-radius: 5px;\n  border: 1px solid #ffffff;\n  color: white;\n  border-radius: 10px;\n  height: 100px;\n  width: 230px;\n  margin-left: 50px;\n  margin-top: 6px;\n  margin-bottom: 10px;\n  position: center;\n}\n\n.tb5:focus {\n  outline: none !important;\n  border: 1px solid white;\n  box-shadow: 0 0 10px #719ece;\n}\n\n.nodecor {\n  text-decoration: none;\n  color: white;\n}\n.nodecory {\n  text-decoration: palegreen;\n  color: white;\n}\n::placeholder {\n  color: white;\n}\n\n.push-upload-btns {\n  margin-left: 60px;\n}\n\n.push-profile-btns {\n  margin-left: 10px;\n}\n\n.custom-file-input {\n  color: transparent;\n}\n.custom-file-input::-webkit-file-upload-button {\n  visibility: hidden;\n}\n.custom-file-input::before {\n  content: \"Upload\";\n  color: white;\n  display: inline-block;\n  background: transparent;\n  border: 1px solid rgb(255, 255, 255);\n  border-radius: 6px;\n  outline: none;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  cursor: pointer;\n  font-size: 10pt;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  margin-left: 50px;\n}\n.custom-file-input:hover::before {\n  color: black;\n  background-color: white;\n}\n\n.custom-file-input:active::before {\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\n}\n\n.profile-pic-upload {\n  border-radius: 50%;\n  /*border: 3px solid white;\n  padding: 5px;*/\n}\n\n.profile-pic-upload-2 {\n  border-radius: 3%;\n  margin-left: 50px;\n  margin-bottom: 10px;\n}\n\n/*.hidden {\n  height: 0px;\n  overflow: hidden;\n}*/\n\n.custom-file-input-1 {\n  color: transparent;\n}\n.custom-file-input-1::-webkit-file-upload-button {\n  visibility: hidden;\n}\n.custom-file-input-1::before {\n  content: \"Upload Profile Picture\";\n  color: white;\n  display: inline-block;\n  background: transparent;\n  border: 1px solid rgb(255, 255, 255);\n  border-radius: 6px;\n  outline: none;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  cursor: pointer;\n  font-size: 10pt;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  margin-left: 47px;\n}\n.custom-file-input-1:hover::before {\n  color: black;\n  background-color: white;\n}\n\n.custom-file-input-1:active::before {\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\n}\n\n/*search*/\n\n.search_box {\n  width: 50%;\n  position: relative;\n}\n\n.search_box input[type=\"text\"] {\n  width: 100%;\n  padding: 20px;\n  padding-right: 60px;\n  box-sizing: border-box;\n  background: rgba(0, 0, 0, 0.3);\n  border: 1px solid #fff;\n  border-radius: 10px;\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  color: #fff;\n  outline: non;\n  margin: 20px;\n}\n\n::-webkit-input-placeholder {\n  color: #fff;\n}\n\n.fa-search {\n  position: absolute;\n  top: 0;\n  right: 0;\n  color: white;\n  font-size: 25px;\n}\n\n.description-box-container {\n  text-align: center;\n}\n\n.description-box {\n  border: 3px solid white;\n  width: 90%;\n  height: 3em;\n\n  font-family: \"Helvetica Neue\", sans-serif;\n  font-size: 13px;\n  padding: 6px 24px;\n  display: inline-block;\n}\n\n.picsadded {\n  border: 1px solid white;\n  border-radius: 7%;\n}\n", ""]);
 
 
 
@@ -35070,9 +35070,9 @@ function valueEqual(a, b) {
 /***/ }),
 
 /***/ "./node_modules/webpack/buildin/global.js":
-/*!************************************************!*\
-  !*** ./node_modules/webpack/buildin/global.js ***!
-  \************************************************/
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -35101,9 +35101,9 @@ module.exports = g;
 /***/ }),
 
 /***/ "./node_modules/webpack/buildin/harmony-module.js":
-/*!********************************************************!*\
-  !*** ./node_modules/webpack/buildin/harmony-module.js ***!
-  \********************************************************/
+/*!*******************************************!*\
+  !*** (webpack)/buildin/harmony-module.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -35217,6 +35217,43 @@ let App = Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateTo
 
 /***/ }),
 
+/***/ "./src/Followers.jsx":
+/*!***************************!*\
+  !*** ./src/Followers.jsx ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+class Followers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "List of Followers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "push-upload-btns"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "profile-btn"
+    }, ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "nodecor",
+      to: "/"
+    }, "Back to Profile Page")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "profile-btn"
+    }, "Remove Followers")));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Followers);
+
+/***/ }),
+
 /***/ "./src/Home.jsx":
 /*!**********************!*\
   !*** ./src/Home.jsx ***!
@@ -35232,7 +35269,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _Upload_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Upload.jsx */ "./src/Upload.jsx");
 /* harmony import */ var _Profile_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Profile.jsx */ "./src/Profile.jsx");
+/* harmony import */ var _Followers_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Followers.jsx */ "./src/Followers.jsx");
+/* harmony import */ var _News_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./News.jsx */ "./src/News.jsx");
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -35250,7 +35291,7 @@ class UnconnectedHome extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       console.log('/find-all response', body);
       body = JSON.parse(body);
       this.props.dispatch({
-        type: "SET_POST",
+        type: 'SET_POST',
         posts: body
       });
     });
@@ -35263,13 +35304,13 @@ class UnconnectedHome extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     });
 
     _defineProperty(this, "renderFollower", () => {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Followers, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Followers_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
         user: this.props.username
       });
     });
 
     _defineProperty(this, "renderNews", () => {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(News, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_News_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
         user: this.props.username
       });
     });
@@ -35398,6 +35439,51 @@ class UnconnectedLogin extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 let Login = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])()(UnconnectedLogin);
 /* harmony default export */ __webpack_exports__["default"] = (Login);
+
+/***/ }),
+
+/***/ "./src/News.jsx":
+/*!**********************!*\
+  !*** ./src/News.jsx ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+class News extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, "Private"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, "Personal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, "Professional")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "push-upload-btns"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "profile-btn"
+    }, ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "nodecor",
+      to: "/"
+    }, "Profile")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "profile-btn"
+    }, ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "nodecor",
+      to: "/upload"
+    }, "Upload")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "profile-btn"
+    }, ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "nodecor",
+      to: "/followers"
+    }, "Followers"))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (News);
 
 /***/ }),
 
