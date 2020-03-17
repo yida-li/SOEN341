@@ -47,4 +47,6 @@ class UnconnectedHome extends Component {
 
 let Home = connect()(UnconnectedHome);
 
+//a comment to test travis
+
 export default Home;
