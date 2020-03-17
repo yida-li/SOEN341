@@ -35286,12 +35286,12 @@ class UnconnectedHome extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     super(...args);
 
     _defineProperty(this, "componentDidMount", async () => {
-      let response = await fetch('/find-all');
+      let response = await fetch("/find-all");
       let body = await response.text();
-      console.log('/find-all response', body);
+      console.log("/find-all response", body);
       body = JSON.parse(body);
       this.props.dispatch({
-        type: 'SET_POST',
+        type: "SET_POST",
         posts: body
       });
     });
