@@ -1,3 +1,7 @@
+
+
+IMPORTANT: THIS IS THE NEW VERSION OF OUR PROJECT
+
 # Project VibeZ
 
     SOEN 341 Social Media Project Winter 2020
