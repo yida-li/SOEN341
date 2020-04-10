@@ -21,6 +21,19 @@ import user from "./pages/user";
 
 import axios from "axios";
 
+//for unit testing.
+import Button from "/components/button/button";
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Button label="click me"></Button>
+      </header>
+    </div>
+  );
+}
+
 const theme = createMuiTheme(themeFile);
 
 const token = localStorage.FBIdToken;
