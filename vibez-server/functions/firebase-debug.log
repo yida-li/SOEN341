@@ -1,0 +1,73 @@
+[debug] [2020-04-09T03:12:18.847Z] ----------------------------------------------------------------------
+[debug] [2020-04-09T03:12:18.852Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alex\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-09T03:12:18.852Z] CLI Version:   8.0.2
+[debug] [2020-04-09T03:12:18.852Z] Platform:      win32
+[debug] [2020-04-09T03:12:18.852Z] Node Version:  v12.14.1
+[debug] [2020-04-09T03:12:18.854Z] Time:          Wed Apr 08 2020 23:12:18 GMT-0400 (GMT-04:00)
+[debug] [2020-04-09T03:12:18.854Z] ----------------------------------------------------------------------
+[debug] [2020-04-09T03:12:18.854Z] 
+[debug] [2020-04-09T03:12:18.866Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-09T03:12:18.867Z] > authorizing via signed-in user
+[debug] [2020-04-09T03:12:18.867Z] [iam] checking project vibez-64df2 for permissions ["firebase.projects.get"]
+[debug] [2020-04-09T03:12:18.870Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vibez-64df2:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-09T03:12:19.201Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 09 Apr 2020 03:12:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=183","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-09T03:12:19.202Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vibez-64df2  
+ 
+[debug] [2020-04-09T03:12:19.407Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 09 Apr 2020 03:12:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\alex\Desktop\star\vibez-server'...
+[info] 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\alex\Desktop\star\vibez-server\functions" for Cloud Functions...
+[debug] [2020-04-09T03:12:21.470Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-09T03:12:21.470Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-09T03:12:21.470Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-09T03:12:21.471Z] [worker-~diagnostic~-2e57da44-8676-429a-b8fb-b438275bec6a]: Assigning socketPath: \\?\pipe\C:\Users\alex\Desktop\star\vibez-server\functions\12916 
+[debug] [2020-04-09T03:12:21.471Z] [worker-~diagnostic~-2e57da44-8676-429a-b8fb-b438275bec6a]: BUSY 
+[debug] [2020-04-09T03:12:22.089Z] [runtime-status] [12916] Functions runtime initialized. {"cwd":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions","node_version":"12.14.1"} 
+[debug] [2020-04-09T03:12:22.090Z] [runtime-status] [12916] Disabled runtime features: undefined 
+[debug] [2020-04-09T03:12:22.096Z] [runtime-status] [12916] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-09T03:12:22.100Z] [runtime-status] [12916] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-09T03:12:22.103Z] [runtime-status] [12916] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-09T03:12:22.188Z] [runtime-status] [12916] Checked functions.config() {"config":{}} 
+[debug] [2020-04-09T03:12:22.190Z] [runtime-status] [12916] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-09T03:12:22.192Z] [runtime-status] [12916] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-09T03:12:22.193Z] [runtime-status] [12916] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-09T03:12:22.194Z] [runtime-status] [12916] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-09T03:12:22.385Z] [runtime-status] [12916] initializeApp(DEFAULT) {"databaseURL":"https://vibez-64df2.firebaseio.com","storageBucket":"vibez-64df2.appspot.com","projectId":"vibez-64df2"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[warn] !  Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\alex\Desktop\star\vibez-server\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as post] (C:\Users\alex\Desktop\star\vibez-server\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\alex\Desktop\star\vibez-server\functions\index.js:31:5)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at C:\Users\alex\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:656:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-04-09T03:12:23.219Z] [worker-~diagnostic~-2e57da44-8676-429a-b8fb-b438275bec6a]: exited 
+[debug] [2020-04-09T03:12:23.220Z] [worker-~diagnostic~-2e57da44-8676-429a-b8fb-b438275bec6a]: FINISHED 
+[debug] [2020-04-09T03:25:46.146Z] File C:\Users\alex\Desktop\star\vibez-server\functions\adschema.js changed, reloading triggers 
+[debug] [2020-04-09T03:25:47.148Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-04-09T03:25:47.156Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-09T03:25:47.156Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-09T03:25:47.156Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-09T03:25:47.156Z] [worker-~diagnostic~-ece3f08e-fb2b-4265-ba73-aa4d9e11b927]: Assigning socketPath: \\?\pipe\C:\Users\alex\Desktop\star\vibez-server\functions\15580 
+[debug] [2020-04-09T03:25:47.157Z] [worker-~diagnostic~-ece3f08e-fb2b-4265-ba73-aa4d9e11b927]: BUSY 
+[debug] [2020-04-09T03:25:48.156Z] [runtime-status] [15580] Functions runtime initialized. {"cwd":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions","node_version":"12.14.1"} 
+[debug] [2020-04-09T03:25:48.158Z] [runtime-status] [15580] Disabled runtime features: undefined 
+[debug] [2020-04-09T03:25:48.163Z] [runtime-status] [15580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-09T03:25:48.166Z] [runtime-status] [15580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-09T03:25:48.169Z] [runtime-status] [15580] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-09T03:25:48.252Z] [runtime-status] [15580] Checked functions.config() {"config":{}} 
+[debug] [2020-04-09T03:25:48.253Z] [runtime-status] [15580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-09T03:25:48.255Z] [runtime-status] [15580] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-09T03:25:48.256Z] [runtime-status] [15580] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-09T03:25:48.256Z] [runtime-status] [15580] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\alex\\Desktop\\star\\vibez-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-09T03:25:48.474Z] [runtime-status] [15580] initializeApp(DEFAULT) {"databaseURL":"https://vibez-64df2.firebaseio.com","storageBucket":"vibez-64df2.appspot.com","projectId":"vibez-64df2"} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
