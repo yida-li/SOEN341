@@ -26,12 +26,12 @@
 
 ## Extra features
 
-1.  Vibe check: simply vibe check the post of a user if you enjoy their content, 
+    1.  Vibe check: simply vibe check the post of a user if you enjoy their content, 
     it is equivalent to liking posts on Instagram.
 
-2.  News feed similar to Instagram, where the posted pictures of all users are displayed.
+    2.  News feed similar to Instagram, where the posted pictures of all users are displayed.
 
-3.  Notification: get notified when another user likes or comments on your content  
+    3.  Notification: get notified when another user likes or comments on your content  
 
 ## Team members
 
