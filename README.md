@@ -56,4 +56,4 @@
  ![](pictures/EditAPI.PNG)
  ![](pictures/NavbarAPI.PNG)
  ![](pictures/ProfileAPI.PNG)
- ![](pictures/ProfilePage.PNG)
+ ![](pictures/CommentAPI.PNG)
