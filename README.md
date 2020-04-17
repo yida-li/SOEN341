@@ -48,3 +48,7 @@
 ## Technologies
 
     FERN stack (Firebase, Express, React and Node.js)
+
+# Images in ReadMe
+
+ ![](pictures/filename%20ProfilePage.PNG)
