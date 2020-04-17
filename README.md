@@ -49,6 +49,11 @@
 
     FERN stack (Firebase, Express, React and Node.js)
 
-# Images in ReadMe
+## Sample of a profile user
 
- ![](pictures/filename%20ProfilePage.PNG)
+ ![](pictures/ProfilePage.PNG)
+## Sample of backend 
+ ![](pictures/EditAPI.PNG)
+ ![](pictures/NavbarAPI.PNG)
+ ![](pictures/ProfileAPI.PNG)
+ ![](pictures/ProfilePage.PNG)
